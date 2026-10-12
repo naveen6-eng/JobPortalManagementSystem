@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MySQL Database Schema & Records</title>
+<style>
+body { background-color: #0f172a; color: #f8fafc; font-family: 'Consolas', 'Courier New', monospace; padding: 25px; }
+h2 { color: #38bdf8; border-bottom: 2px solid #1e293b; padding-bottom: 10px; margin-top: 0; }
+pre { background-color: #1e293b; border: 1px solid #334155; padding: 18px; border-radius: 8px; font-size: 14px; line-height: 1.5; color: #a5f3fc; }
+.badge { background: #0284c7; color: white; padding: 3px 8px; border-radius: 4px; font-size: 12px; }
+</style>
+</head>
+<body>
+<h2>🗄️ MySQL Database Engine: job_portal (Verified Core Tables & Status Updates)</h2>
+<p><span class="badge">Host: localhost:3306</span> &nbsp; <span class="badge">Engine: InnoDB</span> &nbsp; <span class="badge">Character Set: utf8mb4</span></p>
+<pre>
+Tables_in_job_portal
+applications
+jobs
+users
+Field	Type	Null	Key	Default	Extra
+id	int	NO	PRI	NULL	auto_increment
+job_id	int	NO	MUL	NULL	
+seeker_id	int	NO	MUL	NULL	
+application_date	timestamp	YES		CURRENT_TIMESTAMP	DEFAULT_GENERATED
+status	enum('PENDING','SHORTLISTED','REJECTED')	NO		PENDING	
+id	job_id	seeker_id	status	seeker_name	job_title
+9	13	22	REJECTED	Test Seeker	Software Engineer - Java
+8	12	10	PENDING	Demo Seeker	java developer
+7	11	20	PENDING	naveen	Software Engineer - Java
+6	11	18	PENDING	Test Seeker	Software Engineer - Java
+5	10	10	REJECTED	Demo Seeker	Principal Software Architect (20261011_102500)
+</pre>
+</body>
+</html>

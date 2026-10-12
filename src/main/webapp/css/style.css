@@ -1,0 +1,109 @@
+/* Job Portal Custom Stylesheet */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary-color: #64748b;
+    --success-color: #10b981;
+    --dark-color: #0f172a;
+    --light-bg: #f8fafc;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--light-bg);
+    color: #334155;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar-custom {
+    background: #1e293b;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Hero Section */
+.hero-banner {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    color: white;
+    padding: 3.5rem 1rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.search-box-container {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: var(--hover-shadow);
+}
+
+/* Cards */
+.job-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease-in-out;
+    background: white;
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--hover-shadow);
+    border-color: #cbd5e1;
+}
+
+.auth-card {
+    border-radius: 1rem;
+    border: none;
+    box-shadow: var(--card-shadow);
+    background: white;
+}
+
+/* Badges */
+.badge-salary {
+    background-color: #ecfdf5;
+    color: #047857;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 9999px;
+}
+
+.badge-location {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 9999px;
+}
+
+.badge-role-employer {
+    background-color: #fef3c7;
+    color: #92400e;
+    font-weight: 600;
+}
+
+.badge-role-seeker {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    margin-top: auto;
+}
